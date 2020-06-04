@@ -1,0 +1,9 @@
+<small class="meta">
+  {{ with .Date }}
+    <em>Posted on:</em> {{ dateFormat "2006/01/02" . }}
+  {{ end }}
+  {{ with .Params.tags }}
+  <em>Tags:</em> {{ range . }}
+    <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }}{{ end }}
+</small>

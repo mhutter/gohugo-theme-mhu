@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ with .Content}}
+    <div class="content">{{ . }}</div>
+  {{ end }}
+
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ range (.Paginate $pages).Pages }}
+    <article class="post">
+      <header>
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      </header>
+      <div>
+        {{ .Summary | safeHTML }}
+      </div>
+    </article>
+  {{ end }}
+
+{{ end }}

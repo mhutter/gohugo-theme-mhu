@@ -1,0 +1,18 @@
+<nav>
+  <h1 class="site-title">
+    <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
+  </h1>
+
+  <div class="menu">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    {{ end }}
+    {{ with .Site.Params.stackoverflow }}
+      <a href="{{ . }}" target="_blank">SO</a>
+    {{ end }}{{ with .Site.Params.github }}
+      <a href="{{ . }}" target="_blank">GitHub</a>
+    {{ end }}{{ with .Site.Params.twitter }}
+      <a href="{{ . }}" target="_blank">Twitter</a>
+    {{ end }}
+  </div>
+</nav>

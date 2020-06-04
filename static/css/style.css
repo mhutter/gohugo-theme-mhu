@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
+
+html {
+  font-family: 'Source Sans Pro',sans-serif;
+  /* Avoid browsers resizing text when switching between screen orientations */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  border-top: 4px solid #2179d3;
+  border-image: linear-gradient(to right, #2179d3, #2bbb21) 1;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+pre, code {
+  font-family: 'Source Code Pro',monospace;
+}
+pre {
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.9em;
+  overflow-x: auto;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  color: #666;
+}
+
+nav {
+  margin: 0 5vw;
+  border-bottom: 1px solid #ccc;
+}
+nav a {
+  text-decoration: none;
+  line-height: 42px;
+}
+.site-title {
+  margin: 0;
+  display: inline;
+  font-weight: 300;
+}
+.menu {
+  float: right;
+}
+.menu a {
+  margin-right: 1em;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 5vw;
+  max-width: 960px;
+}
+
+.meta em {
+  margin-left: 1em;
+}
+
+.post > p:first-of-type {
+  font-size: 1.2em;
+}
+
+footer {
+  margin-top: 10em;
+  border-top: 1px solid #ccc;
+  padding: 1rem;
+  background: #ddd;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer, footer a {
+  color: #666;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #2179d3;
+  border-image: linear-gradient(to right, #2179d3, #2bbb21) 1;
+}
